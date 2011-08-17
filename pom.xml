@@ -42,5 +42,26 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
 	</build>
+	<repositories>
+		<repository>
+			<id>JANGOD_REPO</id>
+			<name>Jangod repository</name>
+			<url>https://qcode.cloudfoundry.com/s/jangod/maven/</url>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>JANGOD_REPO</id>
+			<name>Jangod repository</name>
+			<url>dav:https://qcode.cloudfoundry.com/s/jangod/maven/</url>
+		</repository>
+	</distributionManagement>
 </project>
