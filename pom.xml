@@ -22,7 +22,7 @@
 		<dependency>
 			<groupId>org.jangod</groupId>
 			<artifactId>jangod</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0-spel-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
