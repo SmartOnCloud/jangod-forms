@@ -22,12 +22,12 @@
 		<dependency>
 			<groupId>org.jangod</groupId>
 			<artifactId>jangod</artifactId>
-			<version>1.0-spel-SNAPSHOT</version>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<version>3.0.6.RELEASE</version>
 		</dependency>
 	</dependencies>
 	<build>
