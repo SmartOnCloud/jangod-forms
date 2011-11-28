@@ -16,54 +16,6 @@ import org.springframework.validation.Errors;
 public class Form {
     transient private Errors errors;
 
-    interface ItemWrapper {
-	String beforeItem(FieldMetadata metadata);
-
-	String beforeItemLabel(FieldMetadata metadata);
-
-	String afterItem(FieldMetadata metadata);
-
-	String afterItemLabel(FieldMetadata metadata);
-
-	String beforeItemField(FieldMetadata metadata);
-
-	String afterItemField(FieldMetadata metadata);
-    }
-
-    class DefaultItemWrapper implements ItemWrapper {
-
-	@Override
-	public String beforeItem(FieldMetadata metadata) {
-	    return "";
-	}
-
-	@Override
-	public String beforeItemLabel(FieldMetadata metadata) {
-	    return "";
-	}
-
-	@Override
-	public String afterItem(FieldMetadata metadata) {
-	    return "";
-	}
-
-	@Override
-	public String afterItemLabel(FieldMetadata metadata) {
-	    return "";
-	}
-
-	@Override
-	public String beforeItemField(FieldMetadata metadata) {
-	    return "";
-	}
-
-	@Override
-	public String afterItemField(FieldMetadata metadata) {
-	    return "";
-	}
-
-    }
-
     public Form() {
     }
 

@@ -42,8 +42,8 @@ public class OptionListRenderer implements Renderer {
 	    FieldError error) {
 	ChoiceField metadata = ChoiceField.class.cast(annotation);
 	if (error != null) {
-	    return format("<label for='%s' class='error'>%s</label>",
-		    getId(field), getLabel(metadata, field));
+	    return format("<label for='%s' class='error' title='%s'>%s</label>",
+		    getId(field), error.getDefaultMessage(), getLabel(metadata, field));
 	}
 	return format("<label for='%s'>%s</label>", getId(field),
 		getLabel(metadata, field));
